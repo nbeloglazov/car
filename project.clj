@@ -5,6 +5,7 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [lein-light-nrepl "0.1.0"]
+                 [org.clojure/tools.reader "0.8.3"]
                  [quil "2.2.4"]
                  [http-kit "2.1.16"]
                  [compojure "1.2.1"]
