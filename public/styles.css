@@ -1,0 +1,22 @@
+canvas {
+    float: left;
+    width: 500px;
+    height: 500px;
+    margin: 0px 30px;
+}
+
+#instructions {
+    float: left;
+    display: inline-block;
+    max-width: 500px;
+    margin: 0px 30px;
+}
+
+pre {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+h4 {
+    margin: 5px 0px;
+}

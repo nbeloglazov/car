@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Car</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <canvas></canvas>
+    <div id="instructions">
+      <h1>Instructions</h1>
+      <h3>Connect to nrepl server</h3>
+      <div>
+        <span>
+          <h4>Emacs</h4>
+          <span id="connect-emacs"></span>
+        </span>
+        <span>
+          <h4>LightTable</h4>
+          <span id="connect-lighttable"></span>
+        </span>
+      </div>
+      <h3>Decide who controls engine and wheel</h3>
+      <h3>Templates</h3>
+      Copy them into local clj file and evaluate.
+      <h4>Engine template</h4>
+      <pre><code>(ns car.engine
+  (:require [car.core :refer [set-engine!]]))
+
+(set-engine! (fn [] :gas))
+(set-engine! (fn [] :break))
+(set-engine! (fn [] :none))
+</code></pre>
+      <h4>Wheel template</h4>
+      <pre><code>(ns car.wheel
+  (:require [car.core :refer [set-wheel!]]))
+
+(set-wheel! (fn [] :left))
+(set-wheel! (fn [] :right))
+(set-wheel! (fn [] :none))
+</code></pre>
+      <h3>Collect clojure logos!</h3>
+  </body>
+</html>
